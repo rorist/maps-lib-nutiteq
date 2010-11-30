@@ -17,6 +17,9 @@ echo -n 'Clean stuff ... '
 rm $DST/src/org/json/util/XML.java
 rm $DST/src/org/json/util/XMLTokener.java
 rm -rf $DST/src/com/nutiteq/landmark
+dos2unix $DST/src/com/mgmaps/cache/ScreenCache.java
+dos2unix $DST/src/com/nutiteq/BasicMapComponent.java
+dos2unix $DST/src/com/mgmaps/utils/Tools.java
 echo 'Finished.'
 
 exit 0 
