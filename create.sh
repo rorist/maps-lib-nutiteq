@@ -1,16 +1,17 @@
 #!/bin/sh
 # Create the structure for Android device
 
-DST='/home/jbaubort/Desktop/android-sources'
+DST='./nutiteq-android'
+SRC=`dirname $0`
 
 echo -n 'Creating android sources ... '
 rm -rf $DST
 mkdir -p $DST
 mkdir $DST/src
-cp -R android/src/* $DST/src/.
-cp -R resources/* $DST/src/.
-cp -R src/* $DST/src/.
-cp -R thirdparty/src/* $DST/src/.
+cp -R $SRC/android/src/* $DST/src/.
+cp -R $SRC/resources/* $DST/src/.
+cp -R $SRC/src/* $DST/src/.
+cp -R $SRC/thirdparty/src/* $DST/src/.
 echo 'Finished.'
 
 echo 'Clean stuff ... '
@@ -23,7 +24,7 @@ rm -rf $DST/src/com/nutiteq/landmark
 echo ' - KXML'
 rm -rf $DST/src/org/kxml2
 mkdir -p $DST/src/org/kxml2/io
-cp thirdparty/src/org/kxml2/io/KXmlParser.java $DST/src/org/kxml2/io/.
+cp $SRC/thirdparty/src/org/kxml2/io/KXmlParser.java $DST/src/org/kxml2/io/.
 #bluetooth
 echo ' - Bluetooth'
 rm -rf $DST/src/javax/bluetooth
