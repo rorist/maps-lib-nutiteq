@@ -35,6 +35,11 @@ echo ' - Motorola'
 rm -rf $DST/src/com/motorola
 rm -rf $DST/src/com/nutiteq/fs/IDENFileSystem.java
 rm -rf $DST/src/com/nutiteq/fs/MotoFileSystem.java
+#images
+rm src/images/small_zoom.png \
+   src/images/osmico.png \
+   src/images/ntico.png\
+   src/images/m-l-controlls.png
 
 # Unused maps
 echo ' - Unused maps'
