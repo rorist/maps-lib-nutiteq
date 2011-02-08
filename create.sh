@@ -45,7 +45,7 @@ rm src/images/small_zoom.png \
 echo ' - Unused maps'
 rm $DST/src/com/nutiteq/maps/BlomOrthoMap.java
 rm $DST/src/com/nutiteq/maps/CloudMade.java
-rm $DST/src/com/nutiteq/maps/GoogleMap.java
+#rm $DST/src/com/nutiteq/maps/GoogleMap.java
 rm $DST/src/com/nutiteq/maps/GoogleStaticMap.java
 rm $DST/src/com/nutiteq/maps/JaredOpenStreetMap.java
 rm $DST/src/com/nutiteq/maps/KaMap.java
